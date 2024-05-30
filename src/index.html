@@ -1163,6 +1163,12 @@
           </p>
         </main>
       </section>
+      <footer
+        class="py-20 border-t border-red-500 mt-10 flex items-center justify-center font-semibold text-gray-900"
+      >
+        Por Gabriel Tlapalamatl López &copy;&nbsp;
+        <div id="date"></div>
+      </footer>
     </main>
 
     <script type="module" src="./js/chart.umd.js"></script>
@@ -1198,6 +1204,7 @@
         );
       }
       document.addEventListener("alpine:init", () => {
+        date.innerHTML = new Date().getFullYear();
         Alpine.data("binomial", () => ({
           showTable: false,
           calculate(e) {
