@@ -4,7 +4,7 @@
   "description": "Sistema de distribuciones estadísticas",
   "main": "index.js",
   "scripts": {
-    "watch-css": "npx tailwindcss -i ./css/app_render.css -o ./css/app.css --watch",
+    "watch-css": "npx tailwindcss -i ./src/css/app_render.css -o ./src/css/app.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

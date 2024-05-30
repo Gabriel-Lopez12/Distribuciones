@@ -19,7 +19,7 @@
   </head>
   <body class="flex gap-2">
     <aside
-      class="w-1/4 h-screen max-h-screen border-r shadow-md py-5 flex flex-col items-center bg-gray-100 flex-shrink-0 overflow-y-auto"
+      class="hidden w-1/4 h-screen max-h-screen border-r shadow-md py-5 sm:flex flex-col items-center bg-gray-100 flex-shrink-0 overflow-y-auto"
     >
       <h1 class="text-2xl font-bold text-amber-700">
         Distribuciones Estadísticas
@@ -185,7 +185,7 @@
       </ul>
     </aside>
     <main
-      class="flex-grow-0 w-3/4 h-screen max-h-screen overflow-y-auto px-10 py-5"
+      class="flex-grow-0 w-full sm:w-3/4 h-screen max-h-screen overflow-y-auto px-3 sm:px-10 py-5"
     >
       <section>
         <header class="border-b border-red-500 pb-3 mb-5">
@@ -193,7 +193,7 @@
             Distribución binomial
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             Es una distribución de probabilidad
             <strong>discreta</strong>&nbsp;descrita por dos parámetros: n el
@@ -252,7 +252,7 @@
             Objetivo - Distribución binomial
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             La distribución binomial se utiliza con frecuencia para modelizar el
             número de aciertos en una muestra de tamaño n extraída con reemplazo
@@ -276,7 +276,7 @@
             Uso - Distribución binomial
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             Usamos el número de éxitos en una secuencia de 𝑛 ensayos de
             Bernoulli independientes entre sí con una probabilidad fija 𝑝 de
@@ -304,7 +304,7 @@
             Limitaciones - Distribución binomial
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             La distribución binomial es útil para resolver problemas donde se
             cumplen las siguientes condiciones. Por ejemplo, puede modelar la
@@ -341,7 +341,7 @@
             Practica - Fallos de servidores.
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             En una fabrica de software se tienen 9 servidores conectados las 24
             horas, sabiendo que la probabilidad de que alguno falle es de 0.36
@@ -354,7 +354,7 @@
             <ul class="my-5">
               <li class="flex gap-2 items-start">
                 <span
-                  class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                  class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                   >1</span
                 >
                 <p>
@@ -369,7 +369,7 @@
               <li class="">
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >2</span
                   >
                   <p>
@@ -403,7 +403,7 @@
               <li>
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >3</span
                   >
                   <p>Sustituimos en</p>
@@ -441,7 +441,7 @@
               <li>
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >4</span
                   >
                   <p>Se realiza la interpretación del resultado</p>
@@ -465,7 +465,7 @@
             Practica - Producto nuevo.
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             Eres dueño de un restaurante y acabas de agregar un nuevo platillo a
             tu menú, ahora llegan 20 clientes y quieres saber la probabilidad de
@@ -479,7 +479,7 @@
             <ul class="my-5">
               <li class="flex gap-2 items-start">
                 <span
-                  class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                  class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                   >1</span
                 >
                 <p>
@@ -494,7 +494,7 @@
               <li class="">
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >2</span
                   >
                   <p>
@@ -529,7 +529,7 @@
               <li>
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >3</span
                   >
                   <p>Sustituimos en</p>
@@ -573,7 +573,7 @@
               <li>
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >4</span
                   >
                   <p>Se realiza la interpretación del resultado</p>
@@ -597,8 +597,10 @@
               Calculadora - Formulario.
             </h2>
           </header>
-          <main class="text-lg flex gap-3 items-center">
-            <form action="" class="w-1/3" @submit="calculate">
+          <main
+            class="text-sm sm:text-lg flex flex-col sm:flex-row gap-3 items-center"
+          >
+            <form action="" class="w-full sm:w-1/3" @submit="calculate">
               <div class="">
                 <label
                   for="n_ensayos_4_2"
@@ -609,7 +611,6 @@
                   id="n_ensayos_4_2"
                   class="focus:outline-none focus:ring focus:ring-offset-1 focus:ring-orange-500 focus:border-gray-300 border-2 border-gray-600 rounded-lg px-3 py-1 h-8 w-full"
                   type="number"
-                  value="20"
                 />
               </div>
               <div class="">
@@ -623,7 +624,6 @@
                   class="focus:outline-none focus:ring focus:ring-offset-1 focus:ring-orange-500 focus:border-gray-300 border-2 border-gray-600 rounded-lg px-3 py-1 h-8 w-full"
                   type="number"
                   step="0.01"
-                  value="0.67"
                 />
               </div>
               <div class="">
@@ -636,7 +636,6 @@
                   id="total_exitos_4_2"
                   class="focus:outline-none focus:ring focus:ring-offset-1 focus:ring-orange-500 focus:border-gray-300 border-2 border-gray-600 rounded-lg px-3 py-1 h-8 w-full"
                   type="number"
-                  value="18"
                 />
               </div>
               <button
@@ -646,7 +645,7 @@
                 Calcular
               </button>
             </form>
-            <div class="w-3/4">
+            <div class="w-full sm:w-1/3">
               <p id="form1_4_2"></p>
               <p id="form2_4_2"></p>
               <p id="form3_4_2"></p>
@@ -692,13 +691,13 @@
       </div>
       <!-- Calculator and chart -->
       <!-- ! Distribución hipergeométrica -->
-      <section>
+      <section class="mt-20">
         <header class="border-b border-red-500 pb-3 mb-5">
           <h2 id="what4.3" class="text-gray-700 font-bold text-4xl">
             Distribución hipergeométrica
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             la distribución hipergeométrica es una distribución de probabilidad
             <strong>discreta</strong> relacionada con muestreos aleatorios y sin
@@ -740,7 +739,7 @@
             Objetivo - Distribución hipergeométrica
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             La clave es que la distribución hipergeométrica permite calcular la
             probabilidad de obtener un número específico de éxitos en
@@ -761,7 +760,7 @@
             Uso - Distribución hipergeométrica
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             Suponga que se tiene una población de 𝑁 elementos de los cuales, 𝐾
             pertenecen a la categoría 𝐴 y 𝑁 pertenecen a la categoría 𝐵. La
@@ -796,7 +795,7 @@
             Limitaciones - Distribución hipergeométrica
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             Para que un problema pueda ser modelado adecuadamente utilizando la
             distribución hipergeométrica, debe cumplir con las siguientes
@@ -845,7 +844,7 @@
             Practica - Saco con esferas.
           </h2>
         </header>
-        <main class="text-lg">
+        <main class="text-sm sm:text-lg">
           <p>
             En un saco lleno de 30 esferas, 18 están marcadas con un 1 y el
             resto con un 0, ¿Cuál es la probabilidad de sacar 7 esferas marcadas
@@ -858,7 +857,7 @@
             <ul class="my-5">
               <li class="flex gap-2 items-start">
                 <span
-                  class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                  class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                   >1</span
                 >
                 <p>
@@ -873,7 +872,7 @@
               <li class="">
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >2</span
                   >
                   <p>
@@ -900,7 +899,7 @@
               <li>
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >3</span
                   >
                   <p>Sustituimos en</p>
@@ -976,7 +975,7 @@
               <li>
                 <div class="flex gap-2 items-start">
                   <span
-                    class="h-7 w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
+                    class="h-5 w-5 sm:h-7 sm:w-7 text-center rounded-full bg-blue-600 text-white flex-shrink-0"
                     >4</span
                   >
                   <p>Se realiza la interpretación del resultado</p>
