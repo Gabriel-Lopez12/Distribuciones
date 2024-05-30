@@ -183,6 +183,13 @@
           </ul>
         </ul>
       </ul>
+      <ul>
+        <li class="my-1">
+          <h2 class="text-base font-semibold">
+            <a href="#references">Referencias</a>
+          </h2>
+        </li>
+      </ul>
     </aside>
     <main
       class="flex-grow-0 w-full sm:w-3/4 h-screen max-h-screen overflow-y-auto px-3 sm:px-10 py-5"
@@ -991,10 +998,171 @@
           </div>
         </main>
       </section>
-
       <!-- Exercise 1 ended -->
-      <section></section>
+      <div class="" x-data="hipergeometrica">
+        <section>
+          <header class="border-b border-red-500 pb-3 my-5">
+            <h2 id="form4.3" class="text-gray-700 font-bold text-4xl">
+              Calculadora - Formulario.
+            </h2>
+          </header>
+          <main
+            class="text-sm sm:text-lg flex flex-col sm:flex-row gap-3 items-center"
+          >
+            <form action="" class="w-full sm:w-1/3" @submit="calculate">
+              <div class="">
+                <label
+                  for="casos_exito_4_3"
+                  class="text-sm font-semibold text-gray-700 my-3"
+                  >Casos de éxito \(K\):</label
+                >
+                <input
+                  id="casos_exito_4_3"
+                  class="focus:outline-none focus:ring focus:ring-offset-1 focus:ring-orange-500 focus:border-gray-300 border-2 border-gray-600 rounded-lg px-3 py-1 h-8 w-full"
+                  type="number"
+                />
+              </div>
+              <div class="">
+                <label
+                  for="n_posibilidades_4_3"
+                  class="text-sm font-semibold text-gray-700 my-3"
+                  >Numero total de posibilidades \(N\):</label
+                >
+                <input
+                  id="n_posibilidades_4_3"
+                  class="focus:outline-none focus:ring focus:ring-offset-1 focus:ring-orange-500 focus:border-gray-300 border-2 border-gray-600 rounded-lg px-3 py-1 h-8 w-full"
+                  type="number"
+                />
+              </div>
+              <div class="">
+                <label
+                  for="n_muestra_4_3"
+                  class="text-sm font-semibold text-gray-700 my-3"
+                  >Tamaño de la muestra \(n\):</label
+                >
+                <input
+                  id="n_muestra_4_3"
+                  class="focus:outline-none focus:ring focus:ring-offset-1 focus:ring-orange-500 focus:border-gray-300 border-2 border-gray-600 rounded-lg px-3 py-1 h-8 w-full"
+                  type="number"
+                />
+              </div>
+
+              <div class="">
+                <label
+                  for="total_exitos_4_3"
+                  class="text-sm font-semibold text-gray-700 my-3"
+                  >Total de éxitos \(x\):</label
+                >
+                <input
+                  id="total_exitos_4_3"
+                  class="focus:outline-none focus:ring focus:ring-offset-1 focus:ring-orange-500 focus:border-gray-300 border-2 border-gray-600 rounded-lg px-3 py-1 h-8 w-full"
+                  type="number"
+                />
+              </div>
+              <button
+                class="w-full h-9 my-2 text-center rounded-lg bg-orange-600 text-white"
+                type="submit"
+              >
+                Calcular
+              </button>
+            </form>
+            <div class="w-full sm:w-1/3">
+              <p id="form1_4_3"></p>
+              <p id="form2_4_3"></p>
+              <p id="form3_4_3"></p>
+              <p id="form4_4_3"></p>
+              <p id="form5_4_3"></p>
+              <p id="form6_4_3"></p>
+              <p id="form7_4_3"></p>
+              <p id="form8_4_3"></p>
+              <p id="form9_4_3"></p>
+            </div>
+          </main>
+        </section>
+        <!-- Form ended -->
+        <section>
+          <header class="border-b border-red-500 pb-3 my-5">
+            <h2 id="chart4.3" class="text-gray-700 font-bold text-4xl">
+              Calculadora - Gráfica.
+            </h2>
+          </header>
+
+          <div class="relative overflow-x-auto">
+            <table
+              class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400"
+              x-show="showTable"
+            >
+              <thead
+                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+              >
+                <tr id="th_4_3"></tr>
+              </thead>
+              <tbody>
+                <tr
+                  id="tb_4_3"
+                  class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+                ></tr>
+              </tbody>
+            </table>
+            <div style="width: 800px" class="mt-10">
+              <canvas id="chart_4_3"></canvas>
+            </div>
+          </div>
+        </section>
+      </div>
       <!-- Calculator and chart -->
+      <section>
+        <header class="border-b border-red-500 pb-3 my-5">
+          <h2 id="references" class="text-gray-700 font-bold text-4xl">
+            Referencias bibliográficas.
+          </h2>
+        </header>
+        <main class="text-xs sm:text-sm font-thin italic text-gray-700">
+          <p>
+            Colaboradores de los proyectos Wikimedia. (2004, January 22).
+            Distribución hipergeométrica. Wikipedia.org; Wikimedia Foundation,
+            Inc.
+            <a
+              class="underline text-gray-900 underline-offset-2"
+              target="_blank"
+              href="https://es.wikipedia.org/wiki/Distribuci%C3%B3n_hipergeom%C3%A9trica"
+              >https://es.wikipedia.org/wiki/Distribuci%C3%B3n_hipergeom%C3%A9trica</a
+            >
+          </p>
+
+          <p>
+            Colaboradores de los proyectos Wikimedia. (2005, October 30).
+            frecuencia con la que se da un suceso en un proceso dicotómico.
+            Wikipedia.org; Wikimedia Foundation, Inc.
+            <a
+              class="underline text-gray-900 underline-offset-2"
+              target="_blank"
+              href="https://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial"
+              >https://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial</a
+            >
+          </p>
+          <p>
+            Javier, F. (2017, November 16). Distribución binomial - Definición,
+            qué es y concepto | Economipedia. Economipedia.
+            <a
+              class="underline text-gray-900 underline-offset-2"
+              target="_blank"
+              href="https://economipedia.com/definiciones/distribucion-binomial.html"
+              >https://economipedia.com/definiciones/distribucion-binomial.html</a
+            >
+          </p>
+
+          <p>
+            Modelo Estadística. (n.d.). Proyectodescartes.org.
+            <a
+              class="underline text-gray-900 underline-offset-2"
+              target="_blank"
+              href="https://proyectodescartes.org/iCartesiLibri/materiales_didacticos/EstadisticaProbabilidadInferencia/VAdiscreta/4_1DistribucionHipergeometrica/index.html"
+              >https://proyectodescartes.org/iCartesiLibri/materiales_didacticos/EstadisticaProbabilidadInferencia/VAdiscreta/4_1DistribucionHipergeometrica/index.html</a
+            >
+          </p>
+        </main>
+      </section>
     </main>
 
     <script type="module" src="./js/chart.umd.js"></script>
@@ -1023,10 +1191,17 @@
           coeficiente * Math.pow(p, x) * Math.pow((1 - p).toFixed(2), n - x)
         );
       }
+      function probabilidad_hip(K, N, n, x) {
+        return (
+          (coeficiente_bi(K, x) * coeficiente_bi(N - K, n - x)) /
+          coeficiente_bi(N, n)
+        );
+      }
       document.addEventListener("alpine:init", () => {
         Alpine.data("binomial", () => ({
           showTable: false,
-          calculate() {
+          calculate(e) {
+            e.preventDefault();
             let n_ensayos = document.querySelector("#n_ensayos_4_2").value;
             let p_exito = document.querySelector("#p_exito_4_2").value;
             let total_exitos =
@@ -1112,6 +1287,152 @@
             // ? Gráfica
 
             chart_bi(document.querySelector("#chart_4_2"), chartValues);
+            this.showTable = true;
+          },
+        }));
+        Alpine.data("hipergeometrica", () => ({
+          showTable: false,
+          calculate(e) {
+            e.preventDefault();
+            let n_posibilidades = document.querySelector(
+              "#n_posibilidades_4_3"
+            ).value;
+            let n_muestra = document.querySelector("#n_muestra_4_3").value;
+            let casos_exito = document.querySelector("#casos_exito_4_3").value;
+            let total_exitos =
+              document.querySelector("#total_exitos_4_3").value;
+            const form1 = document.querySelector("#form1_4_3");
+            const form2 = document.querySelector("#form2_4_3");
+            const form3 = document.querySelector("#form3_4_3");
+            const form4 = document.querySelector("#form4_4_3");
+            const form5 = document.querySelector("#form5_4_3");
+            const form6 = document.querySelector("#form6_4_3");
+            const form7 = document.querySelector("#form7_4_3");
+            const form8 = document.querySelector("#form8_4_3");
+            const form9 = document.querySelector("#form9_4_3");
+            n_posibilidades = n_posibilidades === "" ? 0 : n_posibilidades;
+            n_muestra = n_muestra === "" ? 0 : n_muestra;
+            casos_exito = casos_exito === "" ? 0 : casos_exito;
+            total_exitos = total_exitos === "" ? 0 : total_exitos;
+            typeset(() => {
+              form1.innerHTML = `\\(f(${total_exitos}) = P(X = ${total_exitos}) = \\frac {\\binom {${casos_exito}} {${total_exitos}} \\binom {${n_posibilidades} - ${casos_exito}} {${n_muestra} - ${total_exitos}}} {\\binom {${n_posibilidades}} {${n_muestra}}}\\)`;
+              form2.innerHTML = `\\(f(${total_exitos}) = P(X = ${total_exitos}) = \\frac {\\binom {${casos_exito}} {${total_exitos}} \\binom {${
+                n_posibilidades - casos_exito
+              }} {${
+                n_muestra - total_exitos
+              }}} {\\binom {${n_posibilidades}} {${n_muestra}}}\\)`;
+              // ? Calcular coeficientes
+              form3.innerHTML = `\\( \\binom {${casos_exito}} {${total_exitos}} =  \\frac {${casos_exito}!} {${total_exitos}!(${casos_exito}-${total_exitos})!} = \\frac {${factorial(
+                casos_exito
+              )}} {${factorial(total_exitos)}(${
+                casos_exito - total_exitos
+              })!} \\) `;
+
+              form4.innerHTML = `\\(\\binom {${casos_exito}} {${total_exitos}} = \\frac {${factorial(
+                casos_exito
+              )}} {${factorial(total_exitos)}(${factorial(
+                casos_exito - total_exitos
+              )})} = \\frac {${factorial(casos_exito)}} {${
+                factorial(total_exitos) * factorial(casos_exito - total_exitos)
+              }} = ${
+                factorial(casos_exito) /
+                (factorial(total_exitos) *
+                  factorial(casos_exito - total_exitos))
+              }\\)`;
+              const n_second_coeficiente = n_posibilidades - casos_exito;
+              const x_second_coeficiente = n_muestra - total_exitos;
+              form5.innerHTML = `\\( \\binom {${n_second_coeficiente}} {${x_second_coeficiente}} =  \\frac {${n_second_coeficiente}!} {${x_second_coeficiente}!(${n_second_coeficiente}-${x_second_coeficiente})!} = \\frac {${factorial(
+                n_second_coeficiente
+              )}} {${factorial(x_second_coeficiente)}(${
+                n_second_coeficiente - x_second_coeficiente
+              })!} \\) `;
+              form6.innerHTML = `\\( \\binom {${n_second_coeficiente}} {${x_second_coeficiente}} = \\frac {${factorial(
+                n_second_coeficiente
+              )}} {${factorial(x_second_coeficiente)}(${factorial(
+                n_second_coeficiente - x_second_coeficiente
+              )})} = \\frac {${factorial(n_second_coeficiente)}} {${
+                factorial(x_second_coeficiente) *
+                factorial(n_second_coeficiente - x_second_coeficiente)
+              }} = ${
+                factorial(n_second_coeficiente) /
+                (factorial(x_second_coeficiente) *
+                  factorial(n_second_coeficiente - x_second_coeficiente))
+              }\\)`;
+
+              form7.innerHTML = `\\( \\binom {${n_posibilidades}} {${n_muestra}} = \\frac {${n_posibilidades}!} {${n_muestra}!(${n_posibilidades}-${n_muestra})!} = \\frac {${factorial(
+                n_posibilidades
+              )}} {${factorial(n_muestra)}(${
+                n_posibilidades - n_muestra
+              })!} \\)`;
+
+              form8.innerHTML = `\\(\\binom {${n_posibilidades}} {${n_muestra}} = \\frac {${factorial(
+                n_posibilidades
+              )}} {${factorial(n_muestra)}(${factorial(
+                n_posibilidades - n_muestra
+              )})} = \\frac {${factorial(n_posibilidades)}} {${
+                factorial(n_muestra) * factorial(n_posibilidades - n_muestra)
+              }} = ${Math.round(
+                factorial(n_posibilidades) /
+                  (factorial(n_muestra) *
+                    factorial(n_posibilidades - n_muestra))
+              )}\\)`;
+              const probabilidad_hip_value = probabilidad_hip(
+                casos_exito,
+                n_posibilidades,
+                n_muestra,
+                total_exitos
+              );
+              // Sustitución
+              form9.innerHTML = `\\(f(${total_exitos}) = P(X = ${total_exitos}) = \\frac {(${coeficiente_bi(
+                casos_exito,
+                total_exitos
+              )}) (${coeficiente_bi(
+                n_posibilidades - casos_exito,
+                n_muestra - total_exitos
+              )})} {${coeficiente_bi(n_posibilidades, n_muestra).toFixed(
+                0
+              )}} = \\frac {${
+                coeficiente_bi(casos_exito, total_exitos) *
+                coeficiente_bi(
+                  n_posibilidades - casos_exito,
+                  n_muestra - total_exitos
+                )
+              }} {${coeficiente_bi(n_posibilidades, n_muestra).toFixed(
+                0
+              )}} = ${probabilidad_hip_value.toFixed(8)} = ${(
+                probabilidad_hip_value * 100
+              ).toFixed(2)} \\%\\)`;
+              return [
+                form1,
+                form2,
+                form3,
+                form4,
+                form5,
+                form6,
+                form7,
+                form8,
+                form9,
+              ];
+            });
+            // ? Tabla
+            const th = document.querySelector("#th_4_3");
+            const tb = document.querySelector("#tb_4_3");
+
+            const chartValues = [];
+            for (i = 0; i <= n_muestra; i++) {
+              chartValues.push(
+                probabilidad_hip(casos_exito, n_posibilidades, n_muestra, i)
+              );
+            }
+            th.innerHTML = `<th scope="col" class="px-6 py-3">X</th>`;
+            tb.innerHTML = ` <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">f(x)</th>`;
+            chartValues.map((value, index) => {
+              th.innerHTML += `<th scope="col" class="px-6 py-3">${index}</th>`;
+              tb.innerHTML += `<td class="px-6 py-4">${value.toFixed(8)}</td>`;
+            });
+            // ? Gráfica
+
+            chart_hip(document.querySelector("#chart_4_3"), chartValues);
             this.showTable = true;
           },
         }));
