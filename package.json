@@ -1,0 +1,21 @@
+{
+  "name": "distribuciones",
+  "version": "1.0.0",
+  "description": "Sistema de distribuciones estadísticas",
+  "main": "index.js",
+  "scripts": {
+    "watch-css": "npx tailwindcss -i ./css/app_render.css -o ./css/app.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gabriel Tlapalamatl López",
+  "license": "ISC",
+  "dependencies": {
+    "alpinejs": "^3.14.0",
+    "chartjs": "^0.3.24"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  },
+  "type": "module"
+}
